@@ -1,5 +1,9 @@
 /* <!-- ---------- Header - Sección LAURA ---------- --> */
 
+body {
+  font-family: Rubik, sans-serif;
+}
+
 .header__base {
   height: 60px;
   width: 100%;
@@ -12,7 +16,7 @@
 
 section.header__base h1 {
   color: white;
-  font-family: Rubik, sans-serif;
+
   font-size: 16px;
   font-weight: 500;
   font-stretch: normal;
@@ -43,14 +47,10 @@ section.header__base h1 {
   color: white;
 }
 
-.menu {
+.sticky {
+  width: 100%;
   z-index: 100;
-  position: sticky;
-  top: 0;
-}
-
-.header {
-  display: unset;
+  position: fixed;
 }
 
 /* <!-- ---------- Header - Sección LAURA ---------- --> */
@@ -59,8 +59,7 @@ section.header__base h1 {
 .hero {
   position: relative;
   width: 100%;
-  height: 200px;
-  margin: 0 0 46px;
+  height: 20%;
   background-color: thistle;
 }
 .hero-img {
