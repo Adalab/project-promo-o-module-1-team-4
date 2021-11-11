@@ -26,7 +26,6 @@ section.header__base h1 {
   width: 100%;
   background-color: #14d9c4;
   opacity: 09;
-  color: white;
   font-family: Rubik, sans-serif;
   font-size: 15px;
   font-weight: 500;
@@ -38,6 +37,10 @@ section.header__base h1 {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.item-menu {
+  color: white;
 }
 
 .menu {
