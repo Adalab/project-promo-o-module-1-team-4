@@ -1,4 +1,9 @@
 /* <!-- ---------- Header - Sección LAURA ---------- --> */
+:root {
+  --text-color: #14d9c4;
+  --blue-green: #099d8d;
+  --Rubik-font: "Rubik", sans-serif;
+}
 
 body {
   font-family: Rubik, sans-serif;
@@ -57,9 +62,8 @@ section.header__base h1 {
 
 /*------------------------hero seccion maria*-------------------------*/
 .hero {
-  position: relative;
   width: 100%;
-  height: 20%;
+  height: 500px;
   background-color: thistle;
 }
 .hero-img {
@@ -68,10 +72,12 @@ section.header__base h1 {
   object-fit: cover;
 }
 .rectangle-2 {
-  position: absolute;
-  width: 100%;
+  position: relative;
+  width: 290px;
   height: 80px;
-  bottom: -25%;
+  top: -5%;
+  left: 50%;
+  transform: translate(-50%, 0);
   padding: 14px 15px 16px;
   background-color: white;
   text-align: center;
@@ -79,9 +85,8 @@ section.header__base h1 {
   margin-right: 15px;
 }
 .lema {
-  width: 260px;
-  height: 50px;
-  padding-top: 27px;
+  width: 100%;
+  padding-top: 10px;
   padding-left: 10px;
   font-family: Rubik;
   font-size: 20px;
@@ -93,11 +98,6 @@ section.header__base h1 {
   color: var(--black);
 }
 /* <!-- ---------- MARTA ---------- --> */
-:root {
-  --text-color: #14d9c4;
-  --blue-green: #099d8d;
-  --Rubik-font: "Rubik", sans-serif;
-}
 
 .team {
   box-sizing: border-box;
@@ -105,15 +105,19 @@ section.header__base h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 60px;
   width: 100%;
-  height: 504px;
-  background-color: #fff;
+  margin-bottom: 30px;
 }
 
 .EQUIPO {
-  width: 89px;
+  box-sizing: border-box;
+  text-align: center;
+  width: 100%;
   height: 45px;
-  margin: 0 99.5px 15px 101.5px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 30px;
   font-family: var(--Rubik-font);
   font-size: 24px;
   font-weight: 500;
@@ -121,17 +125,17 @@ section.header__base h1 {
   color: var(--text-color);
 }
 .lorem {
-  width: 290px;
-  height: 384px;
-  margin: 15px 0 0;
+  width: 100%;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
   color: #54585a;
+  padding: 15px;
 }
 .FYD {
   box-sizing: border-box;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -139,7 +143,7 @@ section.header__base h1 {
   width: 100%;
   height: 600px;
   padding: 30px 15px 45px;
-  background-color: #b8b8b9;
+  background-color: #f1f1f1;
   color: var(--strengths-descriptions);
   line-height: 24px;
 }
@@ -150,15 +154,15 @@ section.header__base h1 {
   background-color: #fff;
   transform: rotate(45deg);
   position: absolute;
-  top: 760px;
-  right: 700px;
+  left: 50%;
+  transform: translate(0, 50%) rotate(45deg);
 }
 
 .h3 {
   color: var(--blue-green);
   font-family: var(--Rubik-font);
   font-size: 22px;
-  font-weight: 500px;
+  font-weight: 500;
   line-height: 2.05;
 }
 
@@ -262,31 +266,30 @@ section.header__base h1 {
   width: 100%;
   height: 250px;
   border-top: 1px solid #b8b8b9;
-  border-bottom: 1px solid #b8b8b9;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   align-content: center;
   font-size: 14px;
-  font-family: OpenSans-Semibold;
+  font-family: "Open Sans";
 }
 
 footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 75px;
+  margin-bottom: 0px;
 }
 
 .Nombre-del-grupo-2 {
   width: 100%;
   height: 20px;
-  margin-top: 32px;
+  margin-top: 30px;
   margin-bottom: 20px;
-  font-family: Open Sans;
+  font-family: "Open Sans";
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 400;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.43;
@@ -298,9 +301,9 @@ footer {
 .equipo-quienes-somos {
   width: 114px;
   height: 60px;
-  margin: 20px 29px 30px;
+  margin-bottom: 30px;
   opacity: 0.75;
-  font-family: OpenSans-Semibold;
+  font-family: "Open Sans";
   font-size: 14px;
   font-weight: 600;
   font-stretch: normal;
@@ -315,9 +318,9 @@ footer {
 }
 
 .logo {
-  width: 115.9px;
+  width: 115px;
   height: 45px;
-  margin: 30px 28.1px 28px;
+  margin-bottom: 45px;
 }
 
 .footer-list {
