@@ -70,13 +70,14 @@ section.header__base h1 {
 }
 .rectangle-2 {
   position: absolute;
-  width: 290px;
-  left: 35%;
+  width: 100%;
   height: 80px;
   bottom: -25%;
   padding: 14px 15px 16px;
   background-color: white;
   text-align: center;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 .lema {
   width: 260px;
@@ -171,9 +172,10 @@ section.header__base h1 {
 /* <!-- ---------- Footer - Sección VICTORIA---------- --> */
 
 .footer1 {
-  width: 320px;
+  width: 100%;
   height: 250px;
-  border: solid 1px #b8b8b9;
+  border-top: 1px solid #b8b8b9;
+  border-bottom: 1px solid #b8b8b9;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -191,12 +193,13 @@ footer {
 }
 
 .Nombre-del-grupo-2 {
-  width: 172px;
+  width: 100%;
   height: 20px;
-  margin: 0, 0, 20px;
-  font-family: OpenSans-Semibold;
+  margin-top: 32px;
+  margin-bottom: 20px;
+  font-family: Open Sans;
   font-size: 14px;
-  font-weight: normal;
+  font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.43;
