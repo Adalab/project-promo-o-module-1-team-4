@@ -4,3 +4,6 @@
   padding: 0px;
   list-style-type: none;
 }
+a {
+  text-decoration: none;
+}
