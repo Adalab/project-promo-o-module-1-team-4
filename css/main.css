@@ -3,7 +3,7 @@
 .header__base {
   height: 60px;
   width: 100%;
-  background-color: #099d8d;
+  background-color: #099d8ecf;
   opacity: 0.95;
   display: flex;
   justify-content: center;
@@ -25,7 +25,7 @@ section.header__base h1 {
   height: 60px;
   width: 100%;
   background-color: #14d9c4;
-  opacity: 09;
+  opacity: 0.9;
   font-family: Rubik, sans-serif;
   font-size: 15px;
   font-weight: 500;
