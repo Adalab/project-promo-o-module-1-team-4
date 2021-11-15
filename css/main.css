@@ -349,3 +349,33 @@ footer {
 a:active {
   color: var(--dark-grey);
 }
+@media all and (min-width: 768px) {
+  /* <!-- ---------- Header ---------- --> */
+  .sticky {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #099d8ecf;
+    opacity: 0.95;
+  }
+  .header__base {
+    height: 60px;
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 15px 0px 15px 45px;
+  }
+  .rectangle {
+    height: 60px;
+    width: 100%;
+    background-color: #099d8e00;
+    padding: 15px 45px 15px 0px;
+  }
+  .item-menu {
+    padding: 0px 0px 0px 18px;
+  }
+  /* <!-- ---------- Header ---------- --> */
+}
+@media all and (min-width: 1200px) {
+  
+}
