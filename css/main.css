@@ -195,7 +195,12 @@ section.header__base h1 {
 
 /* <!-- ----------fIN MARTA ---------- --> */
 
-/* <!-- ---------- Quiénes somos - Sección ICO ---------- --> */
+/* ========== Quiénes somos - Sección ICO ==========
+============= Quiénes somos - Sección ICO ========== */
+
+.container {
+  margin: 0 15px;
+}
 
 #about-us {
   display: flex;
@@ -216,8 +221,6 @@ section.header__base h1 {
 }
 
 .presentacion {
-  /* La línea de código max-width se puede quitar dependiendo de los requerimientos del proyecto */
-  max-width: 290px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -350,4 +353,7 @@ footer {
 }
 a:active {
   color: var(--dark-grey);
+}
+
+@media all and (min-width: 768px) {
 }
