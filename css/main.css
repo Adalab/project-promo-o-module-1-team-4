@@ -2,12 +2,13 @@
 :root {
   --text-color: #14d9c4;
   --blue-green: #099d8d;
+  --dark-grey: #54585a;
   --Rubik-font: "Rubik", sans-serif;
 }
 
 body {
-  font-family: Rubik, sans-serif;
-  min-width: 320px;
+  font-family: var(--Rubik-font);
+  /* min-width: 320px; */
 }
 
 .header__base {
@@ -22,7 +23,7 @@ body {
 
 section.header__base h1 {
   color: white;
-
+  text-transform: uppercase;
   font-size: 16px;
   font-weight: 500;
   font-stretch: normal;
@@ -51,6 +52,7 @@ section.header__base h1 {
 
 .item-menu {
   color: white;
+  text-transform: uppercase;
 }
 
 .sticky {
@@ -267,7 +269,7 @@ section.header__base h1 {
 }
 
 .link-rrss {
-  color:#099d8d;
+  color: #099d8d;
 }
 /* <!-- ---------- Quiénes somos - Sección ICO ---------- --> */
 
@@ -336,11 +338,16 @@ footer {
 
 .footer-list {
   color: #54585a;
+  text-transform: uppercase;
 }
 
-a {
-  color: #54585a;
+.social-icon a {
+  color: var(--blue-green);
+}
+
+.footer-list a {
+  color: var(--dark-grey);
 }
 a:active {
-  color: #54585a;
+  color: var(--dark-grey);
 }
