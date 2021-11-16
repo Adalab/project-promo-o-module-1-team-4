@@ -295,7 +295,7 @@ footer {
   margin-bottom: 0px;
 }
 
-.Nombre-del-grupo-2 {
+.Nombre-del-grupo-4 {
   width: 100%;
   height: 20px;
   margin-top: 30px;
@@ -350,4 +350,30 @@ footer {
 }
 a:active {
   color: var(--dark-grey);
+}
+
+@media all and (min-width: 768px) {
+  .footer1 {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    padding: 25px;
+    width: 100%;
+    height: 170px;
+  }
+
+  .logo {
+    flex-direction: row;
+    height: 45px;
+    width: 115.9;
+    margin: 20px;
+  }
+
+  .equipo-quienes-somos {
+  }
+
+  .Nombre-del-grupo-4 {
+    width: 172px;
+  }
 }
