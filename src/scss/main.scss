@@ -1,4 +1,20 @@
+// @import "core/variables";
+// @import "core/reset";
+// @import "components/code";
+// @import "components/links";
+// @import "layout/page";
+// @import "layout/header";
+// @import "layout/footer";
+// @import "pages/index";
+
 /* <!-- ---------- Header - Sección LAURA ---------- --> */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
 :root {
   --text-color: #14d9c4;
   --blue-green: #099d8d;
@@ -194,7 +210,7 @@ section.header__base h1 {
 /* <!-- ----------fIN MARTA ---------- --> */
 
 /* ========== Quiénes somos - Sección ICO ==========
-============= Quiénes somos - Sección ICO ========== */
+  ============= Quiénes somos - Sección ICO ========== */
 
 .container {
   margin: 0 15px;
@@ -273,93 +289,99 @@ section.header__base h1 {
   color: #099d8d;
 }
 /* ========== Fin Sección ICO ==========
-============= Fin Sección ICO ========== */
+  ============= Fin Sección ICO ========== */
 
 /* <!-- ---------- Footer - Sección VICTORIA---------- --> */
 
-.footer1 {
-  width: 100%;
-  height: 250px;
-  border-top: 1px solid #b8b8b9;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  font-size: 14px;
-  font-family: "Open Sans";
-}
-
 footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 0px;
-}
-
-.Nombre-del-grupo-2 {
+  border-top: 1px solid #54585a;
   width: 100%;
-  height: 20px;
-  margin-top: 30px;
-  margin-bottom: 20px;
-  font-family: "Open Sans";
-  font-size: 14px;
-  font-weight: 400;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.43;
-  letter-spacing: normal;
-  text-align: center;
-  color: #b8b8b9;
 }
 
-.equipo-quienes-somos {
-  width: 114px;
-  height: 60px;
-  margin-bottom: 30px;
-  opacity: 0.75;
-  font-family: "Open Sans";
-  font-size: 14px;
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.43;
-  letter-spacing: normal;
-  text-align: center;
-  color: #54585a;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+// .footer1 {
+//   width: 100%;
+//   height: 250px;
+//   border-top: 1px solid #b8b8b9;
+//   // display: flex;
+//   // flex-direction: column;
+//   // justify-content: center;
+//   // align-items: center;
+//   // align-content: center;
+//   font-size: 14px;
+//   font-family: "Open Sans";
+// }
 
-.logo {
-  width: 115px;
-  height: 45px;
-  margin-bottom: 45px;
-}
+// footer {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   margin-bottom: 0px;
+// }
 
-.footer-list {
-  color: #54585a;
-  text-transform: uppercase;
-}
+// .Nombre-del-grupo-4 {
+//   // width: 100%;
+//   // height: 20px;
+//   // margin-top: 30px;
+//   // margin-bottom: 20px;
+//   // font-family: "Open Sans";
+//   // font-size: 14px;
+//   // font-weight: 400;
+//   // font-stretch: normal;
+//   // font-style: normal;
+//   // line-height: 1.43;
+//   // letter-spacing: normal;
+//   // text-align: center;
+//   // color: #b8b8b9;
+// }
 
-.social-icon a {
-  color: var(--blue-green);
-}
+// // .equipo-quienes-somos {
+// // //   width: 114px;
+// // //   height: 60px;
+// // //   margin-bottom: 30px;
+// // //   opacity: 0.75;
+// // //   font-family: "Open Sans";
+// // //   font-size: 14px;
+// // //   font-weight: 600;
+// // //   font-stretch: normal;
+// // //   font-style: normal;
+// // //   line-height: 1.43;
+// // //   letter-spacing: normal;
+// // //   text-align: center;
+// // //   color: #54585a;
+// // //   display: flex;
+// // //   flex-direction: column;
+// // //   align-items: center;
+// // // }
 
-.footer-list a {
-  color: var(--dark-grey);
-}
-a:active {
-  color: var(--dark-grey);
-}
+// .logo {
+//   width: 115px;
+//   height: 45px;
+//   // margin-bottom: 45px;
+// }
+
+// .footer-list {
+//   color: #54585a;
+//   text-transform: uppercase;
+// }
+
+// .social-icon a {
+//   color: var(--blue-green);
+// }
+
+// .footer-list a {
+//   color: var(--dark-grey);
+// }
+// a:active {
+//   color: var(--dark-grey);
+// }
 @media all and (min-width: 768px) {
   /* <!-- ---------- Header ---------- --> */
   .sticky {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #099d8ecf;
+    background-color: #099d8e;
     opacity: 0.95;
   }
   .header__base {
@@ -368,6 +390,7 @@ a:active {
     display: flex;
     justify-content: flex-start;
     padding: 15px 0px 15px 45px;
+    background-color: #099d8e00;
   }
   .rectangle {
     height: 60px;
@@ -378,36 +401,12 @@ a:active {
   .item-menu {
     padding: 0px 0px 0px 18px;
   }
+
   /* <!-- ---------- Header ---------- --> */
+
   /* <!-- ---------- Quiénes somos (Ico) ---------- --> */
   .container {
     margin: 45px;
-    /* <!-- ---------- Quiénes somos (Ico) ---------- --> */
   }
-}
-
-@media all and (min-width: 1200px) {
-}
-
-@media all and (min-width: 768px) {
-  .footer1 {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    padding: 25px;
-    width: 100%;
-    height: 170px;
-  }
-
-  .logo {
-    flex-direction: row;
-    height: 45px;
-    width: 115.9;
-    margin: 20px;
-  }
-
-  .Nombre-del-grupo-4 {
-    width: 172px;
-  }
+  /* <!-- ---------- Quiénes somos (Ico) ---------- --> */
 }
