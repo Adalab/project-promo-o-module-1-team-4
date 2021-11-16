@@ -274,7 +274,8 @@ section.header__base h1 {
 .link-rrss {
   color: #099d8d;
 }
-/* <!-- ---------- Quiénes somos - Sección ICO ---------- --> */
+/* ========== Fin Sección ICO ==========
+============= Fin Sección ICO ========== */
 
 /* <!-- ---------- Footer - Sección VICTORIA---------- --> */
 
@@ -356,4 +357,7 @@ a:active {
 }
 
 @media all and (min-width: 768px) {
+  .container {
+    margin: 45px;
+  }
 }
