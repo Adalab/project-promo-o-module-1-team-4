@@ -132,8 +132,6 @@ section.header__base h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 290px;
-  height: 192px;
   font-family: "Open Sans", sans-serif;
   color: #54585a;
   font-size: 16px;
@@ -195,7 +193,12 @@ section.header__base h1 {
 
 /* <!-- ----------fIN MARTA ---------- --> */
 
-/* <!-- ---------- Quiénes somos - Sección ICO ---------- --> */
+/* ========== Quiénes somos - Sección ICO ==========
+============= Quiénes somos - Sección ICO ========== */
+
+.container {
+  margin: 0 15px;
+}
 
 #about-us {
   display: flex;
@@ -216,8 +219,6 @@ section.header__base h1 {
 }
 
 .presentacion {
-  /* La línea de código max-width se puede quitar dependiendo de los requerimientos del proyecto */
-  max-width: 290px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -271,7 +272,8 @@ section.header__base h1 {
 .link-rrss {
   color: #099d8d;
 }
-/* <!-- ---------- Quiénes somos - Sección ICO ---------- --> */
+/* ========== Fin Sección ICO ==========
+============= Fin Sección ICO ========== */
 
 /* <!-- ---------- Footer - Sección VICTORIA---------- --> */
 
@@ -295,7 +297,7 @@ footer {
   margin-bottom: 0px;
 }
 
-.Nombre-del-grupo-4 {
+.Nombre-del-grupo-2 {
   width: 100%;
   height: 20px;
   margin-top: 30px;
@@ -350,6 +352,41 @@ footer {
 }
 a:active {
   color: var(--dark-grey);
+}
+@media all and (min-width: 768px) {
+  /* <!-- ---------- Header ---------- --> */
+  .sticky {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #099d8ecf;
+    opacity: 0.95;
+  }
+  .header__base {
+    height: 60px;
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 15px 0px 15px 45px;
+  }
+  .rectangle {
+    height: 60px;
+    width: 100%;
+    background-color: #099d8e00;
+    padding: 15px 45px 15px 0px;
+  }
+  .item-menu {
+    padding: 0px 0px 0px 18px;
+  }
+  /* <!-- ---------- Header ---------- --> */
+  /* <!-- ---------- Quiénes somos (Ico) ---------- --> */
+  .container {
+    margin: 45px;
+    /* <!-- ---------- Quiénes somos (Ico) ---------- --> */
+  }
+}
+
+@media all and (min-width: 1200px) {
 }
 
 @media all and (min-width: 768px) {
