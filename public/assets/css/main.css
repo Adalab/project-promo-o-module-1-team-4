@@ -211,7 +211,6 @@ section.header__base h1 {
 .presentacion {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center; }
 
 .profile-pic {
@@ -224,6 +223,11 @@ section.header__base h1 {
   object-fit: cover;
   -o-object-position: top;
   object-position: top; }
+
+.presentacion__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .my-name {
   font-family: "Open Sans", sans-serif;
@@ -250,13 +254,12 @@ section.header__base h1 {
   display: inline;
   font-size: 16px;
   margin: 6px;
-  color: #099d8d; }
+  color: var(--blue-green); }
 
-.dot {
-  color: #099d8d; }
-
+.social-icon a,
+.dot,
 .link-rrss {
-  color: #099d8d; }
+  color: var(--blue-green); }
 
 /* ========== Fin Sección ICO ==========
   ============= Fin Sección ICO ========== */
