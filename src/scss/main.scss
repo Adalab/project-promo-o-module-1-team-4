@@ -293,83 +293,83 @@ section.header__base h1 {
 
 /* <!-- ---------- Footer - Sección VICTORIA---------- --> */
 
-.footer1 {
-  width: 100%;
-  height: 250px;
-  border-top: 1px solid #b8b8b9;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
-  // align-items: center;
-  // align-content: center;
-  font-size: 14px;
-  font-family: "Open Sans";
-}
-
-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 0px;
-}
-
-.Nombre-del-grupo-4 {
-  // width: 100%;
-  // height: 20px;
-  // margin-top: 30px;
-  // margin-bottom: 20px;
-  // font-family: "Open Sans";
-  // font-size: 14px;
-  // font-weight: 400;
-  // font-stretch: normal;
-  // font-style: normal;
-  // line-height: 1.43;
-  // letter-spacing: normal;
-  // text-align: center;
-  // color: #b8b8b9;
-}
-
-.equipo-quienes-somos {
-//   width: 114px;
-//   height: 60px;
-//   margin-bottom: 30px;
-//   opacity: 0.75;
-//   font-family: "Open Sans";
+// .footer1 {
+//   width: 100%;
+//   height: 250px;
+//   border-top: 1px solid #b8b8b9;
+//   // display: flex;
+//   // flex-direction: column;
+//   // justify-content: center;
+//   // align-items: center;
+//   // align-content: center;
 //   font-size: 14px;
-//   font-weight: 600;
-//   font-stretch: normal;
-//   font-style: normal;
-//   line-height: 1.43;
-//   letter-spacing: normal;
-//   text-align: center;
-//   color: #54585a;
+//   font-family: "Open Sans";
+// }
+
+// footer {
 //   display: flex;
 //   flex-direction: column;
 //   align-items: center;
+//   justify-content: center;
+//   margin-bottom: 0px;
 // }
 
-.logo {
-  width: 115px;
-  height: 45px;
-  // margin-bottom: 45px;
-}
+// .Nombre-del-grupo-4 {
+//   // width: 100%;
+//   // height: 20px;
+//   // margin-top: 30px;
+//   // margin-bottom: 20px;
+//   // font-family: "Open Sans";
+//   // font-size: 14px;
+//   // font-weight: 400;
+//   // font-stretch: normal;
+//   // font-style: normal;
+//   // line-height: 1.43;
+//   // letter-spacing: normal;
+//   // text-align: center;
+//   // color: #b8b8b9;
+// }
 
-.footer-list {
-  color: #54585a;
-  text-transform: uppercase;
-}
+// // .equipo-quienes-somos {
+// // //   width: 114px;
+// // //   height: 60px;
+// // //   margin-bottom: 30px;
+// // //   opacity: 0.75;
+// // //   font-family: "Open Sans";
+// // //   font-size: 14px;
+// // //   font-weight: 600;
+// // //   font-stretch: normal;
+// // //   font-style: normal;
+// // //   line-height: 1.43;
+// // //   letter-spacing: normal;
+// // //   text-align: center;
+// // //   color: #54585a;
+// // //   display: flex;
+// // //   flex-direction: column;
+// // //   align-items: center;
+// // // }
 
-.social-icon a {
-  color: var(--blue-green);
-}
+// .logo {
+//   width: 115px;
+//   height: 45px;
+//   // margin-bottom: 45px;
+// }
 
-.footer-list a {
-  color: var(--dark-grey);
-}
-a:active {
-  color: var(--dark-grey);
-}
+// .footer-list {
+//   color: #54585a;
+//   text-transform: uppercase;
+// }
+
+// .social-icon a {
+//   color: var(--blue-green);
+// }
+
+// .footer-list a {
+//   color: var(--dark-grey);
+// }
+// a:active {
+//   color: var(--dark-grey);
+// }
 @media all and (min-width: 768px) {
   /* <!-- ---------- Header ---------- --> */
   .sticky {
@@ -424,8 +424,5 @@ a:active {
 
   .Nombre-del-grupo-4 {
     width: 172px;
-  }
-
-  .equipo-quienes-somos {
   }
 }
