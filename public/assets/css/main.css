@@ -358,7 +358,7 @@ footer {
   align-items: center;
   padding: 30px 74px 45px 74px; }
 
-.Nombre-grupo {
+.copy {
   font-size: 14px;
   line-height: 20px;
   text-align: center;
@@ -371,7 +371,6 @@ footer {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding-bottom: 30px;
   color: #54585a; }
 
 .menu-footer li {
@@ -379,5 +378,21 @@ footer {
 
 .logo {
   height: 45px; }
+
+@media (min-width: 768px) {
+  .footer {
+    display: inline-block;
+    height: 250px; }
+  .menu-footer {
+    float: right;
+    display: inline-flex;
+    text-align: right;
+    transform: translateY(-60%);
+    line-height: 35px; }
+  .copy {
+    margin-top: 50px;
+    line-height: 80px; }
+  .logo {
+    height: 50px; } }
 
 /*# sourceMappingURL=main.css.map */
