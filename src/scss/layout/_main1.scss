@@ -35,6 +35,7 @@
   color: #54585a;
   font-size: 16px;
   line-height: 1.5;
+  height: 200px;
 }
 .FYD {
   box-sizing: border-box;
@@ -49,6 +50,14 @@
   background-color: #f1f1f1;
   color: var(--strengths-descriptions);
   line-height: 24px;
+
+@media all and (min-width:780px){
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    height:450px ;
+  }
+
 }
 
 .cuadrado {
