@@ -372,10 +372,4 @@ footer {
 .logo {
   height: 45px; }
 
-@media all and (min-width: 768px) {
-  .logo .Nombre-grupo {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; } }
-
 /*# sourceMappingURL=main.css.map */
