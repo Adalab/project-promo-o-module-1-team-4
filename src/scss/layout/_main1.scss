@@ -7,7 +7,7 @@
   margin-top: 60px;
   width: 100%;
   margin-bottom: 30px;
-  @media all and (min-width:780px){
+  @media all and (min-width:768px){
     height: 250px;
 }}
 
@@ -26,8 +26,9 @@
   padding-bottom: 90px;
   color: $textColor;
   scroll-margin: 125px;
-  @media all and (min-width:780px){
+  @media all and (min-width:768px){
     transform: translateY(50%,-50);
+    
   
   
 
@@ -47,7 +48,7 @@
   line-height: 1.5;
   height: 200px;
   width:50%;
-  @media all and (min-width:780px){
+  @media all and (min-width:768px){
     transform: translateY(-50%);}}
  
 
@@ -65,13 +66,13 @@
   color: var(--strengths-descriptions);
   line-height: 24px;
 
-@media all and (min-width:780px){
+@media all and (min-width:768px){
     display:flex;
     flex-direction:row;
     justify-content: space-evenly;
     height: 450px ;
   }
-
+  
 }
 
 .cuadrado {
@@ -108,7 +109,7 @@
   font-family: "Open Sans", sans-serif;
   color: #54585a;
   padding: 0;
-  @media all and (min-width:780px){
+  @media all and (min-width:768px){
     width: 324px;
   }
 
