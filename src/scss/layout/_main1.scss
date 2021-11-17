@@ -21,6 +21,7 @@
   font-size: 24px;
   font-weight: 500;
   line-height: 1.88;
+  padding-bottom: 90px;
   color: $textColor;
   scroll-margin: 125px;
 }
@@ -62,6 +63,8 @@
 }
 
 .cuadrado {
+  
+  padding: 0;
   box-sizing: border-box;
   text-align: center;
   display: flex;
@@ -81,23 +84,23 @@
   font-size: 22px;
   font-weight: 500;
   line-height: 2.05;
+  margin: 20px;
 }
+  
+  
 
 .parrafo {
+  box-sizing: border-box;
   width: 290px;
   height: 50%;
   font-family: "Open Sans", sans-serif;
   color: #54585a;
+  padding: 0;
+  @media all and (min-width:780px){
+    width: 324px;
+  }
+
 }
 
-.parrafo2 {
-  width: 290px;
-  height: 192px;
-  margin: 75px 0 0;
-  font-size: 16px;
-  font-family: "Open Sans", sans-serif;
-  line-height: 1.5;
-  color: #54585a;
-}
 
-//Media query
+
