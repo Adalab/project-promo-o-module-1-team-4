@@ -1,12 +1,16 @@
 .container {
   margin: 0 15px;
+  @media (min-width: 768px) {
+    margin: 0 45px;
+  }
+  @media (min-width: 1200px) {
+    margin: 0 138px;
+  }
 }
 
 #about-us {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   scroll-margin: 125px;
 }
 
@@ -14,16 +18,44 @@
   font-size: 24px;
   color: $blueGreen;
   text-align: center;
-  font-family: "Rubik", sans-serif;
+  font-family: $rubikFont;
   font-weight: 500;
   text-transform: uppercase;
   margin: 40px 0px 20px 0px;
+  @media (min-width: 768px) {
+    margin-bottom: 10px;
+  }
 }
 
 .presentacion {
   display: flex;
   flex-direction: column;
   align-items: center;
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &--even {
+      margin: 30px 0;
+      align-items: flex-end;
+    }
+    &--odd {
+      margin: 30px 0;
+      align-items: flex-start;
+    }
+  }
+  @media (min-width: 768px) {
+    &:nth-child(even) {
+      width: 100%;
+      flex-direction: row;
+      align-items: flex-start;
+    }
+    &:nth-child(odd) {
+      width: 100%;
+      flex-direction: row-reverse;
+      align-items: flex-start;
+    }
+  }
 }
 
 .profile-pic {
@@ -34,12 +66,16 @@
   margin: 10px;
   object-fit: cover;
   object-position: top;
-}
-
-.presentacion__text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @media (min-width: 768px) {
+    width: 205px;
+    height: 205px;
+    margin: 30px 0;
+    // flex-shrink: 0; /* Prevents images from shrinking */
+  }
+  @media (min-width: 1200px) {
+    width: 278px;
+    height: 278px;
+  }
 }
 
 .my-name {
@@ -48,7 +84,12 @@
   font-size: 20px;
   text-align: center;
   margin-top: 10px;
+  @media (min-width: 768px) {
+    height: 45px;
+    line-height: 45px;
+  }
 }
+
 .about-me {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -57,121 +98,56 @@
   text-align: center;
   color: #54585a;
   margin: 10px 0px;
+  @media (min-width: 1200px) {
+    width: 440px;
+  }
 }
 
 .social {
   margin-top: 20px;
   margin-bottom: 40px;
+  @media (min-width: 768px) {
+    padding-top: 15px;
+  }
+  &__icon {
+    font-family: "Open Sans", sans-serif;
+    display: inline;
+    font-size: 16px;
+    margin: 6px;
+    color: $blueGreen;
+    &--link {
+      color: $blueGreen;
+    }
+  }
 }
 
-.social-icon {
-  font-family: "Open Sans", sans-serif;
-  display: inline;
-  font-size: 16px;
-  margin: 6px;
-  color: $blueGreen;
-}
-
-.social-icon a,
 .dot,
 .link-rrss {
   color: $blueGreen;
 }
 
-.desc_odd,
-.desc_even {
-  padding: 0;
+.desc_odd {
   text-align: center;
-}
-
-.social-icon a {
-  color: $blueGreen;
-}
-
-//Media query
-
-@media all and (min-width: 768px) {
-  .quienes-somos {
-    margin-bottom: 10px;
-  }
-
-  .container {
-    margin: 45px;
-  }
-
-  .presentacion:nth-child(even) {
-    width: 100%;
-    flex-direction: row;
-    align-items: flex-start;
-  }
-
-  .presentacion:nth-child(odd) {
-    width: 100%;
-    flex-direction: row-reverse;
-    align-items: flex-start;
-  }
-
-  .profile-pic {
-    width: 205px;
-    height: 205px;
-    margin: 30px 0;
-    flex-shrink: 0; /* Prevents images from shrinking */
-  }
-
-  .presentacion__text--odd {
-    margin: 30px 0;
-    align-items: flex-start;
-  }
-
-  .presentacion__text--even {
-    margin: 30px 0;
-    align-items: flex-end;
-  }
-  .my-name {
-    height: 45px;
-    line-height: 45px;
-  }
-
-  .desc_odd {
+  @media (min-width: 768px) {
     margin: 0;
     max-width: 440px;
     text-align: left;
     padding-left: 30px;
   }
+  @media (min-width: 1200px) {
+    padding-left: 45px;
+  }
+}
 
-  .desc_even {
+.desc_even {
+  text-align: center;
+  @media (min-width: 768px) {
     margin: 0;
     max-width: 440px;
     text-align: right;
     padding-right: 30px;
   }
-
-  .social {
-    padding-top: 15px;
-  }
-}
-
-// Media 1200
-
-@media all and (min-width: 1200px) {
-  .container {
-    margin: 138px;
-  }
-
-  .profile-pic {
-    width: 278px;
-    height: 278px;
-  }
-
-  .about-me {
-    width: 440px;
-  }
-
-  .desc_odd {
-    padding-left: 45px;
-  }
-
-  .desc_even {
+  @media (min-width: 1200px) {
     padding-right: 45px;
   }
 }
