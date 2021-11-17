@@ -7,7 +7,9 @@
   margin-top: 60px;
   width: 100%;
   margin-bottom: 30px;
-}
+  @media all and (min-width:780px){
+    height: 250px;
+}}
 
 .EQUIPO {
   box-sizing: border-box;
@@ -24,6 +26,13 @@
   padding-bottom: 90px;
   color: $textColor;
   scroll-margin: 125px;
+  @media all and (min-width:780px){
+    transform: translateY(50%,-50);
+  
+  
+
+}
+  
 }
 .lorem {
   box-sizing: border-box;
@@ -38,7 +47,10 @@
   line-height: 1.5;
   height: 200px;
   width:50%;
-}
+  @media all and (min-width:780px){
+    transform: translateY(-50%);}}
+ 
+
 .FYD {
   box-sizing: border-box;
   text-align: center;
@@ -57,7 +69,7 @@
     display:flex;
     flex-direction:row;
     justify-content: space-evenly;
-    height:450px ;
+    height: 450px ;
   }
 
 }
