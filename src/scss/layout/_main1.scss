@@ -1,0 +1,93 @@
+.team {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.EQUIPO {
+  box-sizing: border-box;
+  text-align: center;
+  width: 100%;
+  height: 45px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 30px;
+  font-family: $rubikFont;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.88;
+  color: $textColor;
+  scroll-margin: 125px;
+}
+.lorem {
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+  color: #54585a;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.FYD {
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 600px;
+  padding: 30px 15px 45px;
+  background-color: #f1f1f1;
+  color: var(--strengths-descriptions);
+  line-height: 24px;
+}
+
+.cuadrado {
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translate(0, 50%) rotate(45deg);
+}
+
+.h3 {
+  color: $blueGreen;
+  font-family: $rubikFont;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 2.05;
+}
+
+.parrafo {
+  width: 290px;
+  height: 192px;
+  font-family: "Open Sans", sans-serif;
+  color: #54585a;
+}
+
+.parrafo2 {
+  width: 290px;
+  height: 192px;
+  margin: 75px 0 0;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+  color: #54585a;
+}
+
+//Media query
