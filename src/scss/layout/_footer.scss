@@ -1,6 +1,43 @@
 footer {
   border-top: 1px solid #54585a;
   width: 100%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px 74px 45px 74px;
+}
+
+.Nombre-grupo {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  font-family: "Open Sans";
+  color: $darkGrey;
+  padding-bottom: 20px;
+}
+
+.menu-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 30px;
+  color: $darkGrey;
+}
+
+.menu-footer li {
+  text-transform: uppercase;
+}
+
+.logo {
+  height: 45px;
+}
+
+@media all and (min-width: 768px) {
+  
+  }
 }
 
 // .footer1 {
