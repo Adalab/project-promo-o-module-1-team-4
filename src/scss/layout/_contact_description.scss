@@ -1,0 +1,27 @@
+.contact_title {
+  font-size: 24px;
+  color: $blueGreen;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.contact_paragraph {
+  font-size: 16px;
+  color: $darkGrey;
+  text-align: center;
+  width: 290px;
+  margin-bottom: 15px;
+}
+.contact_small {
+  font-size: 12px;
+  color: $darkGrey;
+}
+.contact_small_text {
+  color: $textColor;
+}
+.contact_content_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0 30px 0;
+}
