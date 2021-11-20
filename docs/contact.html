@@ -43,40 +43,22 @@
             obligatorios.</small>
     </section>
     <form class="form" action="https://formspree.io/f/mrgrndpw" method="post">
-      <label class="class-title" for="nombre">Nombre completo<span> *</span></label>
-      <input class="placeholder1" id="nombre" type="text" placeholder="Nombre..." />
+      <label class="label" for="nombre">Nombre completo<span class="label --span"> *</span></label>
+      <input class="input" id="nombre" type="text" placeholder="Nombre..." />
 
-      <div class="container">
-        <label class="class-title itememail" for="email">Email <span>*</span></label>
-        <input
-          class="placeholder2 item1"
-          id="email"
-          type="email"
-          placeholder="nombre.apellidos@mail.com"
-        />
+      <label class="label" for="email">Email <span class="label --span">*</span></label>
+      <input class="input email" id="email" type="email" placeholder="nombre.apellidos@mail.com" />
 
-        <label class="class-title itemtel" for="numero">Teléfono</label>
-        <input
-          class="placeholder1 item2"
-          id="numero"
-          type="tel"
-          placeholder="Ej:123456789"
-        />
+      <label class="label" for="numero">Teléfono</label>
+      <input class="input" id="numero" type="tel" placeholder="Ej:123456789" />
       </div>
 
-      <label class="class-title" for="texto">Mensaje<span> *</span></label>
-      <textarea
-        class="placeholder1 textarea"
-        id="texto"
-        name="texto"
-        rows="3"
-        cols="80"
-        placeholder="¿Qué necesitas?"
-      ></textarea>
-
-      <input class="button" type="submit" value="Enviar" />
+      <label class="label" for="texto">Mensaje<span class="__label --span"> *</span></label>
+      <textarea class="textarea" id="texto" name="texto" rows="3" cols="80" placeholder="¿Qué necesitas?"></textarea>
+      <div class="container__buttom">
+        <input class="bottom" type="submit" value="Enviar" />
+      </div>
     </form>
-
 
   </main>
   <footer class="footer">
