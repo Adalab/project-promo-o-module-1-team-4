@@ -28,3 +28,22 @@
   margin: 30px 0 30px 0;
   line-height: 24px;
 }
+
+@media (min-width: 768px) {
+  .contact_paragraph {
+    margin-left: 163px;
+    margin-right: 163px;
+    width: 442px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  @media (min-width: 1200px) {
+    .contact_paragraph {
+      width: 100%;
+      margin-left: 300px;
+      margin-right: 300px;
+    }
+  }
+}

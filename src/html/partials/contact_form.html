@@ -1,20 +1,34 @@
 <form class="form" action="https://formspree.io/f/mrgrndpw" method="post">
+  <label class="class-title" for="nombre">Nombre completo<span> *</span></label>
+  <input class="placeholder1" id="nombre" type="text" placeholder="Nombre..." />
 
+  <div class="container">
+    <label class="class-title item" for="email">Email <span>*</span></label>
+    <input
+      class="placeholder2 item1"
+      id="email"
+      type="email"
+      placeholder="nombre.apellidos@mail.com"
+    />
 
-    <label class="class-title" for="nombre">Nombre completo<span> *</span></label>
-    <input class="placeholder1" id="nombre" type="text" placeholder="Nombre...">
+    <label class="class-title item" for="numero">Teléfono</label>
+    <input
+      class="placeholder1 item2"
+      id="numero"
+      type="tel"
+      placeholder="Ej:123456789"
+    />
+  </div>
 
-    <label class="class-title" for="email">Email <span>*</span></label>
-    <input class="placeholder2" id="email" type="email" placeholder="nombre.apellidos@mail.com">
+  <label class="class-title" for="texto">Mensaje<span> *</span></label>
+  <textarea
+    class="placeholder1 textarea"
+    id="texto"
+    name="texto"
+    rows="3"
+    cols="80"
+    placeholder="¿Qué necesitas?"
+  ></textarea>
 
-    <label class="class-title" for="numero">Teléfono</label>
-    <input class="placeholder1" id="numero" type="tel" placeholder="Ej:123456789">
-
-    <label class="class-title" for="texto">Mensaje<span> *</span></label>
-    <textarea class="placeholder1 textarea" id="texto" name="texto" rows="3" cols="80"
-        placeholder="¿Qué necesitas?"></textarea>
-
-    <input class="button" type="submit" value="Enviar">
-
-
+  <input class="button" type="submit" value="Enviar" />
 </form>
