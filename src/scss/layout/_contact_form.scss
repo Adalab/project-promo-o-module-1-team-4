@@ -57,21 +57,32 @@
   @media (min-width: 1200px) {
     .container {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-      grid-gap: 5px;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
       height: 45px;
-      margin-top: 30px;
+      margin-bottom: 40px;
+      gap: 5px;
+      margin-left: 0;
     }
 
-    .item {
-      display: grid;
+    .itememail{grid-column:1/2 ;
+      grid-row: 1/2;
+
     }
-    .item1 {
-      width: 395px;
+    .itemtel{grid-column:2/3 ;
+      grid-row:1/2;
+      margin-left: 165px;
+      
     }
-    .item2 {
-      width: 162px;
+
+    .item1 {width: 700px;
+    }
+
+    .item2 {grid-column: 2/3;
+      grid-row: 2/3;
+      width: 300px;
+      margin-left: 165px;
+      
     }
     .button {
       width: 278px;
