@@ -18,8 +18,13 @@
   margin-top: 13px;
 }
 
+.label_block {
+  display: block;
+  padding-bottom: 7px;
+}
+
 .--span {
-  color: $blueGreen;
+  color: $textColor;
 }
 .input {
   height: 45px;
@@ -27,6 +32,7 @@
   border: 1px solid $coolGrey;
   padding: 11px 0 15px 15px;
 }
+
 .email {
   font-size: 16px;
   color: $darkGrey;
@@ -54,6 +60,7 @@
 .group_tel {
   margin-top: 13px;
 }
+
 @media (min-width: 768px) {
   .form {
     width: 442px;
