@@ -7,9 +7,10 @@
   margin-top: 0px;
   width: 100%;
   margin-bottom: 60px;
-  @media all and (min-width:768px){
+  @media all and (min-width: 768px) {
     height: 200px;
-}}
+  }
+}
 
 .EQUIPO {
   box-sizing: border-box;
@@ -25,14 +26,9 @@
   padding-bottom: 90px;
   color: $textColor;
   scroll-margin: 125px;
-  @media all and (min-width:768px){
-    transform: translateY(50%,-50);
-    
-  
-  
-
-}
-  
+  @media all and (min-width: 768px) {
+    transform: translateY(50%, -50);
+  }
 }
 .lorem {
   box-sizing: border-box;
@@ -46,10 +42,11 @@
   font-size: 16px;
   line-height: 1.5;
   height: 200px;
-  width:50%;
-  @media all and (min-width:768px){
-    transform: translateY(-40%);}}
- 
+  width: 50%;
+  @media all and (min-width: 768px) {
+    transform: translateY(-40%);
+  }
+}
 
 .FYD {
   box-sizing: border-box;
@@ -65,16 +62,15 @@
   color: var(--strengths-descriptions);
   line-height: 24px;
 
-@media all and (min-width:768px){
-    display:flex;
-    flex-direction:row;
+  @media all and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
-    height: 450px ;
+    height: 450px;
   }
-  
 }
 
-.cuadrado { 
+.cuadrado {
   padding: 0;
   box-sizing: border-box;
   text-align: center;
@@ -97,8 +93,6 @@
   line-height: 2.05;
   margin: 20px;
 }
-  
-  
 
 .parrafo {
   box-sizing: border-box;
@@ -107,11 +101,7 @@
   font-family: "Open Sans", sans-serif;
   color: #54585a;
   padding: 0;
-  @media all and (min-width:768px){
+  @media all and (min-width: 768px) {
     width: 324px;
   }
-
 }
-
-
-
