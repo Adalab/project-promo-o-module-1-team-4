@@ -1,42 +1,90 @@
-.form{display: flex;
-flex-direction: column;
-justify-content: center;
-margin-left: 15px;
-margin-right: 15px;}
-
-.class-title {font-size: 14px;
-color:$darkGrey;
-padding-bottom: 7px;
-margin-top: 13px;
+.container_form {
+  display: flex;
+  justify-content: center;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: 290px;
+}
+.label {
+  font-size: 14px;
+  color: $darkGrey;
+  width: 100%;
+  padding-bottom: 7px;
+  margin-top: 13px;
 }
 
-.class-title span{
-    color: $textColor;
+.--span {
+  color: $blueGreen;
 }
-
-.placeholder1{font-size: 14px;
-color:$coolGrey;
-border: 1px solid $coolGrey;
-padding: 11px 0 15px 15px;
-height: 45px;}
-.textarea{height:105px;}
-
-
-
-.placeholder2{font-size: 16px;
-color:$darkGrey;
-border: 1px solid $coolGrey;
-height: 45px;
-padding-left: 15px;}
-
-.button{background-color: $blueGreen;
-text-transform: uppercase;
-color: white;
-border: 0;
-height: 45px;
-width: 100%;
-margin-top: 30px;
-margin-bottom: 60px;
-border-radius: 4px;
-font-size: 16px;
+.input {
+  height: 45px;
+  width: 100%;
+  border: 1px solid $coolGrey;
+  padding: 11px 0 15px 15px;
+}
+.email {
+  font-size: 16px;
+  color: $darkGrey;
+  padding-left: 15px;
+}
+.textarea {
+  height: 105px;
+  padding: 11px 0 15px 15px;
+}
+.bottom {
+  background-color: $blueGreen;
+  text-transform: uppercase;
+  color: white;
+  border: 0;
+  height: 45px;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  border-radius: 4px;
+  font-size: 16px;
+}
+.group_email {
+  margin-top: 13px;
+}
+.group_tel {
+  margin-top: 13px;
+}
+@media (min-width: 768px) {
+  .form {
+    width: 442px;
+    margin-left: 163px;
+    margin-right: 163px;
+  }
+  .bottom {
+    height: 45px;
+    width: 206px;
+  }
+  .container__buttom {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+@media all and (min-width: 1200px) {
+  .form {
+    width: 601px;
+    margin-left: 299px;
+    margin-right: 299px;
+  }
+  .group_email {
+    width: 395px;
+    margin-right: 22px;
+  }
+  .group_tel {
+    width: 162px;
+    margin-left: 22px;
+  }
+  .group_together {
+    display: flex;
+  }
 }
