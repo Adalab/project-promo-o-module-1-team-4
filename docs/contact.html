@@ -5,10 +5,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contacto</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./assets/css/main.css" />
   <link rel="icon" href="./assets/images/favicon.png" />
-  <link rel="stylesheet" href="./assets/css/main.css" />
 </head>
 
 <body>
@@ -28,23 +30,53 @@
   </header>
   <main>
     <div class="hero">
-      <img class="hero-img" src="./assets/images/Page/hero-image-2.jpeg" alt="" />
-
-      <div class="rectangle-2">
-        <h2 class="lema">Programo, luego existo</h2>
+        <img class="hero-img" src="./assets/images/Page/hero-image-2.jpeg" alt="" />
       </div>
-    </div>
-
+      
     <section class="contact_content_text">
         <h2 class="contact_title">Contacto</h2>
 
-        <p class="contact_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur odio alias magnam aut
-            asperiores libero in molestiae
-            sint, enim, vel perspiciatis omnis dignissimos sunt a debitis. Dicta neque soluta dolores.</p>
+        <p class="contact_paragraph">Si quieres ponerte en contacto con nosotras...¡No dudes en hacerlo a través de nuestro
+            formulario!<br>
+            Estaremos encantadas de leerte.</p>
         <small class="contact_small">Todos los campos marcados con <span class="contact_small_text">*</span> son
             obligatorios.</small>
     </section>
-    
+    <form class="form" action="https://formspree.io/f/mrgrndpw" method="post">
+      <label class="class-title" for="nombre">Nombre completo<span> *</span></label>
+      <input class="placeholder1" id="nombre" type="text" placeholder="Nombre..." />
+
+      <div class="container">
+        <label class="class-title itememail" for="email">Email <span>*</span></label>
+        <input
+          class="placeholder2 item1"
+          id="email"
+          type="email"
+          placeholder="nombre.apellidos@mail.com"
+        />
+
+        <label class="class-title itemtel" for="numero">Teléfono</label>
+        <input
+          class="placeholder1 item2"
+          id="numero"
+          type="tel"
+          placeholder="Ej:123456789"
+        />
+      </div>
+
+      <label class="class-title" for="texto">Mensaje<span> *</span></label>
+      <textarea
+        class="placeholder1 textarea"
+        id="texto"
+        name="texto"
+        rows="3"
+        cols="80"
+        placeholder="¿Qué necesitas?"
+      ></textarea>
+
+      <input class="button" type="submit" value="Enviar" />
+    </form>
+
 
   </main>
   <footer class="footer">
