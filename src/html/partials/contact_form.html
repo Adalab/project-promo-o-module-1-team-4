@@ -1,17 +1,22 @@
-<form class="form" action="https://formspree.io/f/mrgrndpw" method="post">
-  <label class="label" for="nombre">Nombre completo<span class="label --span"> *</span></label>
-  <input class="input" id="nombre" type="text" placeholder="Nombre..." />
+<div class="container_form">
+  <form class="form" action="https://formspree.io/f/mrgrndpw" method="post">
+    <label class="label" for="nombre">Nombre completo<span class="label --span"> *</span></label>
+    <input class="input" id="nombre" type="text" placeholder="Nombre..." />
+    <div class="group_together">
+      <div class="group_email">
+        <label class="label" for="email">Email <span class="label --span">*</span></label>
+        <input class="input email group" id="email" type="email" placeholder="nombre.apellidos@mail.com" />
+      </div>
+      <div class="group_tel">
+        <label class="label" for="numero">Teléfono</label>
+        <input class="input tel" id="numero" type="tel" placeholder="Ej:123456789" />
+      </div>
+    </div>
 
-  <label class="label" for="email">Email <span class="label --span">*</span></label>
-  <input class="input email" id="email" type="email" placeholder="nombre.apellidos@mail.com" />
-
-  <label class="label" for="numero">Teléfono</label>
-  <input class="input" id="numero" type="tel" placeholder="Ej:123456789" />
-  </div>
-
-  <label class="label" for="texto">Mensaje<span class="__label --span"> *</span></label>
-  <textarea class="textarea" id="texto" name="texto" rows="3" cols="80" placeholder="¿Qué necesitas?"></textarea>
-  <div class="container__buttom">
-    <input class="bottom" type="submit" value="Enviar" />
-  </div>
-</form>
+    <label class="label" for="texto">Mensaje<span class="__label --span"> *</span></label>
+    <textarea class="textarea" id="texto" name="texto" rows="3" cols="80" placeholder="¿Qué necesitas?"></textarea>
+    <div class="container__buttom">
+      <input class="bottom" type="submit" value="Enviar" />
+    </div>
+  </form>
+</div>
