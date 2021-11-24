@@ -14,17 +14,17 @@
 </head>
 
 <body>
-  <header class="header_sticky">
-  <section class="header_grupo">
+  <header class="header">
+  <section class="header__top">
     <h1><a href="./index.html#home">Super Programmers</a></h1>
   </section>
   <nav>
-    <ul class="header_menu">
-      <li><a class="item-menu" href="./index.html#id-equipo">Equipo</a></li>
+    <ul class="header__button">
+      <li><a class="header__button--menu" href="./index.html#id-equipo">Equipo</a></li>
       <li>
-        <a class="item-menu" href="./index.html#about-us">Quiénes somos</a>
+        <a class="header__button--menu" href="./index.html#about-us">Quiénes somos</a>
       </li>
-      <li><a class="item-menu" href="./contact.html">Contacto</a></li>
+      <li><a class="header__button--menu" href="./contact.html">Contacto</a></li>
     </ul>
   </nav>
 </header>
@@ -43,36 +43,68 @@
     </section>
     <div class="container_form">
       <form class="form" action="https://formspree.io/f/mrgrndpw" method="post">
-        <label class="label" for="nombre">Nombre completo<span class="label --span"> *</span></label>
-        <input class="input" id="nombre" type="text" placeholder="Nombre..."
+        <label class="label" for="nombre"
+          >Nombre completo<span class="label --span"> *</span></label
+        >
+        <input
+          class="input"
+          id="nombre"
+          type="text"
+          placeholder="Nombre..."
           title="Estamos deseando conocerte, ¿empezamos por tu nombre? (Debe contener sólo letras)"
-          pattern="[a-zA-ZàáèéìíòóùúüñçÀÁÉÌÍÒÓÜÑ ,.'-]{2,48}" required />
+          pattern="[a-zA-ZàáèéìíòóùúüñçÀÁÉÌÍÒÓÜÑ ,.'-]{2,48}"
+          required
+        />
         <div class="group_together">
           <div class="group_email">
             <div class="label_block">
-              <label class="label" for="email">Email <span class="label --span">*</span></label>
+              <label class="label" for="email"
+                >Email <span class="label --span">*</span></label
+              >
             </div>
-            <input class="input email" id="email" type="email" placeholder="nombre.apellidos@mail.com"
+            <input
+              class="input email"
+              id="email"
+              type="email"
+              placeholder="nombre.apellidos@mail.com"
               title="Queremos poder responderte así que, necesitamos tu email."
-              pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required />
+              pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
+              required
+            />
           </div>
           <div class="group_tel">
             <div class="label_block">
               <label class="label" for="numero">Teléfono</label>
             </div>
-            <input class="input tel" id="numero" type="tel" placeholder="Ej:123456789"
-              title="Si quieres, también puedes dejarnos tu número de teléfono." />
+            <input
+              class="input tel"
+              id="numero"
+              type="tel"
+              placeholder="Ej:123456789"
+              title="Si quieres, también puedes dejarnos tu número de teléfono."
+            />
           </div>
         </div>
 
-        <label class="label" for="texto">Mensaje<span class="__label --span"> *</span></label>
-        <textarea class="textarea" id="texto" name="texto" rows="3" cols="80" placeholder="¿Qué necesitas?"
-          title="Estamos deseando leer tu mensaje." required></textarea>
+        <label class="label" for="texto"
+          >Mensaje<span class="__label --span"> *</span></label
+        >
+        <textarea
+          class="textarea"
+          id="texto"
+          name="texto"
+          rows="3"
+          cols="80"
+          placeholder="¿Qué necesitas?"
+          title="Estamos deseando leer tu mensaje."
+          required
+        ></textarea>
         <div class="container__buttom">
           <input class="bottom" type="submit" value="Enviar" />
         </div>
       </form>
     </div>
+
 
   </main>
   <footer class="footer">
