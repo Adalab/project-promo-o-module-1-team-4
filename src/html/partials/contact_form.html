@@ -8,6 +8,8 @@
       id="nombre"
       type="text"
       placeholder="Nombre..."
+      title="Estamos deseando conocerte, ¿empezamos por tu nombre? (Debe contener sólo letras)"
+      pattern="[a-zA-ZàáèéìíòóùúüñçÀÁÉÌÍÒÓÜÑ ,.'-]{2,48}"
       required
     />
     <div class="group_together">
@@ -22,6 +24,8 @@
           id="email"
           type="email"
           placeholder="nombre.apellidos@mail.com"
+          title="Queremos poder responderte así que, necesitamos tu email."
+          pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
           required
         />
       </div>
@@ -34,6 +38,7 @@
           id="numero"
           type="tel"
           placeholder="Ej:123456789"
+          title="Si quieres, también puedes dejarnos tu número de teléfono."
         />
       </div>
     </div>
@@ -48,6 +53,7 @@
       rows="3"
       cols="80"
       placeholder="¿Qué necesitas?"
+      title="Estamos deseando leer tu mensaje."
       required
     ></textarea>
     <div class="container__buttom">
