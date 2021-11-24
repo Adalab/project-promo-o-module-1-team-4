@@ -8,7 +8,7 @@
   padding: 30px 15px 30px 15px;
   margin-top: -80px;
   @media all and (min-width: 768px) {
-    height: 200px;
+    padding: 0px 45px 60px 45px;
   }
 }
 
@@ -24,7 +24,6 @@
   padding-bottom: 15px;
   scroll-margin: 125px;
   @media all and (min-width: 768px) {
-    transform: translateY(50%, -50);
   }
 }
 .lorem {
@@ -36,7 +35,10 @@
   line-height: 1.5;
   max-width: 290px;
   @media all and (min-width: 768px) {
-    transform: translateY(-40%);
+    max-width: 678px;
+  }
+  @media all and (min-width: 1200px) {
+    max-width: 601px;
   }
 }
 
@@ -55,10 +57,9 @@
   line-height: 24px;
 
   @media all and (min-width: 768px) {
-    display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    height: 450px;
+    align-items: flex-start;
+    padding: 45px 30px 60px 30px;
   }
 }
 
@@ -89,11 +90,20 @@
 .parrafo {
   box-sizing: border-box;
   max-width: 290px;
-  height: 50%;
   font-family: "Open Sans", sans-serif;
   color: #54585a;
   padding-bottom: 30px;
   @media all and (min-width: 768px) {
-    width: 324px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 0;
+    max-width: 324px;
+  }
+  @media all and (min-width: 1200px) {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 22.5px;
+    margin-right: 22.5px;
+    max-width: 439px;
   }
 }
