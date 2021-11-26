@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contacto</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <link rel="icon" href="./assets/images/favicon.png" />
+</head>
+
+<body>
+  <header class="header">
+  <section class="header__top">
+    <h1><a href="./index.html#home">Super Programmers</a></h1>
+  </section>
+  <nav>
+    <ul class="header__button">
+      <li><a class="header__button--menu" href="./index.html#id-equipo">Equipo</a></li>
+      <li>
+        <a class="header__button--menu" href="./index.html#about-us">Quiénes somos</a>
+      </li>
+      <li><a class="header__button--menu" href="./contact.html">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+  <main>
+    <div class="hero">
+      <img class="hero-img" src="./assets/images/Page/abc_3.jpg" alt="" />
+    </div>
+    <section class="contact_content_text">
+        <h2 class="contact_content_text__title">Contacto</h2>
+
+        <p class="contact_content_text__paragraph">Si quieres ponerte en contacto con nosotras...¡No dudes en hacerlo a través de nuestro
+            formulario!<br>
+            Estaremos encantadas de leerte.</p>
+        <small class="contact_content__small">Todos los campos marcados con <span class="contact_content__small--text">*</span> son
+            obligatorios.</small>
+    </section>
+    <div class="container_form">
+      <form class="form" action="https://formspree.io/f/mrgrndpw" method="post">
+        <label class="label" for="nombre"
+          >Nombre completo<span class="label --span"> *</span></label
+        >
+        <input
+          class="input"
+          id="nombre"
+          type="text"
+          placeholder="Nombre..."
+          title="Estamos deseando conocerte, ¿empezamos por tu nombre? (Debe contener sólo letras)"
+          pattern="[a-zA-ZàáèéìíòóùúüñçÀÁÉÌÍÒÓÜÑ ,.'-]{2,48}"
+          required
+        />
+        <div class="group_together">
+          <div class="group_email">
+            <div class="label_block">
+              <label class="label" for="email"
+                >Email <span class="label --span">*</span></label
+              >
+            </div>
+            <input
+              class="input email"
+              id="email"
+              type="email"
+              placeholder="nombre.apellidos@mail.com"
+              title="Queremos poder responderte así que, necesitamos tu email."
+              pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
+              required
+            />
+          </div>
+          <div class="group_tel">
+            <div class="label_block">
+              <label class="label" for="numero">Teléfono</label>
+            </div>
+            <input
+              class="input tel"
+              id="numero"
+              type="tel"
+              placeholder="Ej:123456789"
+              title="Si quieres, también puedes dejarnos tu número de teléfono."
+            />
+          </div>
+        </div>
+
+        <label class="label" for="texto"
+          >Mensaje<span class="__label --span"> *</span></label
+        >
+        <textarea
+          class="textarea"
+          id="texto"
+          name="texto"
+          rows="3"
+          cols="80"
+          placeholder="¿Qué necesitas?"
+          title="Estamos deseando leer tu mensaje."
+          required
+        ></textarea>
+        <div class="container__buttom">
+          <input class="bottom" type="submit" value="Enviar" />
+        </div>
+      </form>
+    </div>
+
+
+  </main>
+  <footer class="footer">
+    <small class="copy">Super Programmers © 2021</small>
+
+    <nav>
+      <ul class="menu-footer">
+        <li>Equipo</li>
+        <li>Quiénes somos</li>
+        <li>Contacto</li>
+      </ul>
+    </nav>
+    <img class="logo" src="./assets/images/Page/logo-adalab.png" />
+  </footer>
+</body>
+
+</html>
