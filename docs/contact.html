@@ -52,15 +52,15 @@
         <div class="form__together">
           <div class="form__together--email">
             <div class="label_block">
-              <label class="label" for="email">Email <span class="span_contact">*</span></label>
+              <label class="form__label" for="email">Email <span class="span_contact">*</span></label>
             </div>
-            <input class="input_email" id="email" type="email" placeholder="nombre.apellidos@mail.com"
+            <input class="input__email" id="email" type="email" placeholder="nombre.apellidos@mail.com"
               title="Queremos poder responderte así que, necesitamos tu email."
               pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required />
           </div>
           <div class="form__together--tel">
             <div class="label_block">
-              <label class="label" for="numero">Teléfono</label>
+              <label class="form__label" for="numero">Teléfono</label>
             </div>
             <input class="input_tel" id="numero" type="tel" placeholder="Ej:123456789"
               title="Si quieres, también puedes dejarnos tu número de teléfono." />
@@ -68,11 +68,11 @@
         </div>
 
         <label class="form__label" for="texto">Mensaje<span class="span_contact"> *</span></label>
-        <textarea class="form__textarea" id="texto" name="texto" rows="3" cols="80" placeholder="¿Qué necesitas?"
+        <textarea class="textarea" id="texto" name="texto" rows="3" cols="80" placeholder="¿Qué necesitas?"
           title="Estamos deseando leer tu mensaje." required></textarea>
 
-        <div class="form__button">
-          <input class="form__button--item" type="submit" value="Enviar" />
+        <div class="container-button">
+          <input class="container-button__item" type="submit" value="Enviar" />
         </div>
 
       </form>
