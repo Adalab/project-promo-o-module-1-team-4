@@ -53,6 +53,12 @@
   margin-bottom: 60px;
   border-radius: 4px;
   font-size: 16px;
+  transition: border-color ease 1s, background-color ease 1s, color ease 1s;
+  &:hover {
+    color: $blueGreen;
+    border: 3px solid $blueGreen;
+    background-color: white;
+  }
 }
 .group_email {
   margin-top: 13px;
