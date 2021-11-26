@@ -1,95 +1,70 @@
-.container_form {
+/*.container_form {
+  display: flex;
+  justify-content: center;
+}
+.form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  .form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 15px;
-    margin-right: 15px;
-    width: 290px;
-    &__label {
-      font-size: 14px;
-      color: $darkGrey;
-      width: 100%;
-      padding-bottom: 7px;
-      margin-top: 13px;
-    }
-    &__input {
-      height: 45px;
-      width: 100%;
-      border: 1px solid $coolGrey;
-      padding: 11px 0 15px 15px;
-    }
-    &__together {
-      &--email {
-        & .label_block {
-        }
-        & .input_email {
-        }
-      }
-      &--tel {
-        & .label_block {
-        }
-        & .input_tel {
-        }
-      }
-    }
-    &__textarea {
-    }
-    &__buttom {
-    }
-  }
+  margin-left: 15px;
+  margin-right: 15px;
+  width: 290px;
+}
+.label {
+  font-size: 14px;
+  color: $darkGrey;
+  width: 100%;
+  padding-bottom: 7px;
+  margin-top: 13px;
 }
 
-/*
-    &__together {
-      &--email {
-        margin-top: 13px;
-        .label_block {
-          display: block;
-          padding-bottom: 7px;
-        }
-        .input_email {
-          font-size: 16px;
-          color: $darkGrey;
-          padding-left: 15px;
-        }
-      }
-      &--tel {
-        margin-top: 13px;
-      }
-    }
-    &__textarea {
-      height: 105px;
-      padding: 11px 0 15px 15px;
-    }
-    &__buttom {
-      background-color: $blueGreen;
-      text-transform: uppercase;
-      color: white;
-      border: 0;
-      height: 45px;
-      width: 100%;
-      margin-top: 30px;
-      margin-bottom: 60px;
-      border-radius: 4px;
-      font-size: 16px;
-      transition: border-color ease 1s, background-color ease 1s, color ease 1s;
-      &:hover {
-        color: $blueGreen;
-        border: 3px solid $blueGreen;
-        background-color: white;
-        cursor: pointer;
-      }
-    }
-  }
-}*/
+.label_block {
+  display: block;
+  padding-bottom: 7px;
+}
 
-/*.span_contact {
+.--span {
   color: $textColor;
+}
+.input {
+  height: 45px;
+  width: 100%;
+  border: 1px solid $coolGrey;
+  padding: 11px 0 15px 15px;
+}
+
+.email {
+  font-size: 16px;
+  color: $darkGrey;
+  padding-left: 15px;
+}
+.textarea {
+  height: 105px;
+  padding: 11px 0 15px 15px;
+}
+.bottom {
+  background-color: $blueGreen;
+  text-transform: uppercase;
+  color: white;
+  border: 0;
+  height: 45px;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color ease 1s, background-color ease 1s, color ease 1s;
+  &:hover {
+    color: $blueGreen;
+    border: 3px solid $blueGreen;
+    background-color: white;
+  }
+}
+.group_email {
+  margin-top: 13px;
+}
+.group_tel {
+  margin-top: 13px;
 }
 
 @media (min-width: 768px) {
