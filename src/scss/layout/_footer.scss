@@ -1,26 +1,51 @@
-.container_form {
-  .form {
-    &__label {
+.footer {
+  &__page {
+    border-top: 1px solid #b8b8b9;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 74px 45px 74px;
+    @media (min-width: 768px) {
+      display: inline-block;
+      height: 250px;
     }
-    &__input {
-    }
-    &__together {
-      &--email {
-        .label_block {
-          .label {
-          }
-        }
+    &--copy {
+      font-size: 14px;
+      line-height: 20px;
+      text-align: center;
+      font-family: "Open Sans";
+      color: $coolGrey;
+      padding-bottom: 20px;
+      @media (min-width: 768px) {
+        margin-top: 50px;
+        line-height: 80px;
       }
-      &--tel {
-        .label_block {
-          .label {
-          }
-        }
-        .input_tel {
-        }
+    }
+    &--menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      color: $darkGrey;
+      @media (min-width: 768px) {
+        float: right;
+        display: inline-flex;
+        text-align: right;
+        transform: translateY(-60%);
+        line-height: 35px;
       }
     }
-    &__buttom {
+    &--menu li {
+      text-transform: uppercase;
+    }
+    &--logo {
+      height: 45px;
+      @media (min-width: 768px) {
+        height: 50px;
+      }
     }
   }
 }
