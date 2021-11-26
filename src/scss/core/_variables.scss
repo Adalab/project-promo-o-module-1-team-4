@@ -3,3 +3,12 @@ $blueGreen: #099d8d;
 $darkGrey: #54585a;
 $coolGrey: #b8b8b9;
 $rubikFont: "Rubik", sans-serif;
+
+//MIXINS
+
+@mixin input {
+    height: 45px;
+    width: 100%;
+    border: 1px solid $coolGrey;
+    padding: 11px 0 15px 15px;
+}

@@ -1,4 +1,4 @@
-/*.container_form {
+.container_form {
   display: flex;
   justify-content: center;
 }
@@ -9,13 +9,53 @@
   margin-left: 15px;
   margin-right: 15px;
   width: 290px;
-}
-.label {
-  font-size: 14px;
-  color: $darkGrey;
-  width: 100%;
-  padding-bottom: 7px;
-  margin-top: 13px;
+
+  @media (min-width: 768px) {
+    width: 442px;
+    margin-left: 163px;
+    margin-right: 163px;
+  }
+  @media all and (min-width: 1200px) {
+    width: 601px;
+    margin-left: 299px;
+    margin-right: 299px;
+  }
+
+  &__label {
+    font-size: 14px;
+    color: $darkGrey;
+    width: 100%;
+    padding-bottom: 7px;
+    margin-top: 13px;
+  }
+
+  &__input {
+    @include input;
+  }
+
+  &__together {
+    @media all and (min-width: 1200px) {
+      display: flex;
+    }
+
+    &--email {
+      margin-top: 13px;
+    }
+
+    @media all and (min-width: 1200px) {
+      width: 395px;
+      margin-right: 22px;
+    }
+
+    &--tel {
+      margin-top: 13px;
+
+      @media all and (min-width: 1200px) {
+        width: 162px;
+        margin-left: 22px;
+      }
+    }
+  }
 }
 
 .label_block {
@@ -23,26 +63,36 @@
   padding-bottom: 7px;
 }
 
-.--span {
+.span_contact {
   color: $textColor;
 }
-.input {
-  height: 45px;
-  width: 100%;
-  border: 1px solid $coolGrey;
-  padding: 11px 0 15px 15px;
-}
 
-.email {
+.input__email {
   font-size: 16px;
   color: $darkGrey;
   padding-left: 15px;
+  @include input;
+  @media all and (min-width: 1200px) {
+    width: 395px;
+    margin-right: 22px;
+  }
 }
+
+.input_tel {
+  @include input;
+  @media all and (min-width: 1200px) {
+    width: 162px;
+  }
+}
+
 .textarea {
+  display: flex;
+  flex-direction: column;
   height: 105px;
   padding: 11px 0 15px 15px;
 }
-.bottom {
+
+.container-button__item {
   background-color: $blueGreen;
   text-transform: uppercase;
   color: white;
@@ -59,45 +109,17 @@
     border: 3px solid $blueGreen;
     background-color: white;
   }
-}
-.group_email {
-  margin-top: 13px;
-}
-.group_tel {
-  margin-top: 13px;
-}
 
-@media (min-width: 768px) {
-  .form {
-    width: 442px;
-    margin-left: 163px;
-    margin-right: 163px;
-  }
-  .bottom {
+  @media (min-width: 768px) {
     height: 45px;
     width: 206px;
   }
-  .container__buttom {
+}
+
+.container-buttom {
+  @media (min-width: 768px) {
     width: 100%;
     display: flex;
     justify-content: flex-end;
   }
 }
-@media all and (min-width: 1200px) {
-  .form {
-    width: 601px;
-    margin-left: 299px;
-    margin-right: 299px;
-  }
-  .group_email {
-    width: 395px;
-    margin-right: 22px;
-  }
-  .group_tel {
-    width: 162px;
-    margin-left: 22px;
-  }
-  .group_together {
-    display: flex;
-  }
-}*/
